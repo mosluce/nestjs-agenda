@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ['10.x', '12.x', '14.x']
+        node: ["10.x", "12.x", "14.x"]
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
@@ -18,6 +18,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
+
+      - name: MongoDB in GitHub Actions
+        uses: supercharge/mongodb-github-action@1.3.0
+        with:
+          mongodb-version: ${{ matrix.mongodb-version }}
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
