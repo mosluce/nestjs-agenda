@@ -16,15 +16,12 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "prebuild": "npm run test",
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why",
-    "prerelease": "npm run build",
-    "release": "release-it"
+    "analyze": "size-limit --why"
   },
   "peerDependencies": {},
   "husky": {
