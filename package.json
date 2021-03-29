@@ -21,7 +21,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "release": "release-it"
   },
   "peerDependencies": {},
   "husky": {
@@ -69,5 +70,11 @@
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",
     "agenda": "^4.0.1"
+  },
+  "release-it": {
+    "github": {
+      "release": true,
+      "tokenRef": "CI_TOKEN"
+    }
   }
 }
