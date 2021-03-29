@@ -10,6 +10,10 @@
   "engines": {
     "node": ">=10"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "start": "tsdx watch",
     "prebuild": "npm run test",
