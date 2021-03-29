@@ -12,12 +12,15 @@
   },
   "scripts": {
     "start": "tsdx watch",
+    "prebuild": "npm run test",
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "prerelease": "npm run build",
+    "release": "release-it"
   },
   "peerDependencies": {},
   "husky": {
@@ -50,6 +53,7 @@
     "@size-limit/preset-small-lib": "^4.10.1",
     "husky": "^5.2.0",
     "reflect-metadata": "^0.1.13",
+    "release-it": "^14.5.0",
     "size-limit": "^4.10.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.1.0",
