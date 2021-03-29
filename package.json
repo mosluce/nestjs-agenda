@@ -40,6 +40,11 @@
   },
   "name": "@ccmos/nestjs-agenda",
   "author": "mosluce",
+  "keywords": [
+    "agenda",
+    "schedule",
+    "nestjs"
+  ],
   "module": "dist/nestjs-agenda.esm.js",
   "size-limit": [
     {
