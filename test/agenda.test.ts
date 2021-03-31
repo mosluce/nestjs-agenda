@@ -1,7 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { Job } from 'agenda/dist/job';
-import { AgendaModule } from '../src';
-import { Agenda } from '../src/agenda/interfaces';
+import { Agenda, AgendaModule } from '../src';
 
 describe('agenda module - use forRoot', () => {
   let agenda: Agenda;
